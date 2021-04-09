@@ -1,0 +1,205 @@
+body { /* Imagem de fundo */
+	background: url(backgimg.jpg);
+	background-repeat: no-repeat;
+	background-size: 100%;
+	background-color: #131311; /*Cor do BG com a mesma tonalidade do final da imagem*/
+	font-family: 'Montserrat', sans-serif;
+}
+header {
+	position: static;
+}
+
+.menubar { /* Menu inicial */
+	text-decoration: none;
+	display: flex ;
+	position: absolute;
+	width: auto;
+	top: 10%;
+	left: 5%;
+	right: 5%;
+}
+.menubar h1 {
+	font-size: 35px;
+	color: #ffdab9;
+	font-weight: bold;
+	margin: 10px 350px 10px 20px;
+}
+
+.menubar nav {
+	top: 75px;
+	right: 150px;
+	padding: 20px 0 0 0;
+}
+.menubar nav li {
+	display: inline;
+	margin: 0 0 0 10px;
+}
+.menubar nav a {
+	text-transform: uppercase;
+	color: #ffdab9;
+	font-weight: bold;
+	font-size: 20px ;	
+	text-decoration: none;
+} 
+.menubar nav a:hover {
+	color: rgb(250, 205, 3);
+	text-decoration: underline;
+}
+
+.principal { /*Texto principal da Homepage*/
+	display: inline-block;
+	margin: 400px 20% 0 20% ;
+	font-size: 25px;
+	padding: 10px;
+	clear: right;
+}
+
+.titulo-principal {
+	text-align: center;
+	font-size: 50px;
+	color: #ffdab9;;
+	padding: 8px;
+	margin: 0 45px 0 45px;
+}
+
+.cor-letras {
+	color: #ffdab9;
+	text-align: center;
+}
+	
+.missao {
+	color: #ffdab9;
+	text-align: center;
+}
+
+em strong {
+	color: rgb(209, 197, 29)
+}
+em :hover {
+	color: rgb(250, 205, 3);
+	text-decoration: underline;
+}
+.video { /*Vídeo ilustrativo */
+	width: 560px;
+	margin: 5em auto;
+}
+.beneficios, .titulo-centralizado { /*Benefícios do estabelecimento*/
+	display: inline-block;
+	width: 50%;
+	margin-left: 25%;
+	margin-right: 25%;
+	font-size: 20px;
+	color:  #ffdab9;	
+	text-align:left;
+	padding-bottom: 20px;
+}
+.titulo-centralizado {
+	text-align: center;
+	font-size: 30px;
+}
+.utensilhos {
+	float: right;
+	width: 200px;
+}
+.lista{
+	font-style: italic;
+	padding-bottom: 10px;
+}
+.lista::before{
+	content: "\269C" ;
+}
+.localizacao {  /*Titulo e mapa integrado ao google*/
+	padding: 0 20px 20px 0;
+	margin: 30px;
+}
+.localizacao p {
+	color:  #ffdab9;
+	font-size: 20px;
+	text-align: center;
+	margin: 2em 0 2em ;
+}
+.titulo-mapa {
+	color:  #ffdab9;
+	font-size: 40px;
+	text-align: center;
+	padding: 10px ;
+}
+.mapa {	
+	text-align: center;
+}
+footer { /*Rodapé*/
+	background: url(bg.jpg);
+	padding: 20px 50px;
+	text-align: center;
+	color:  #ffdab9;;
+	margin-top: 50px;
+}
+.copyright {
+	font-size: 15px;
+}
+
+/* Área responsiva da Homepage */
+
+@media screen and (max-width: 480px) {
+	body { /* Imagem de fundo */
+		background-size:100%;
+	}
+	.menubar { /* Menu inicial */
+		text-decoration: none;
+		display: block;
+		width: 95%;
+		top: 8%;
+		left: 2%;
+		right: 2%;
+		text-align: center;
+	}
+	.menubar h1 {
+		font-size: 22px;
+		margin: 10px 10px 66px 15px;
+	}
+	.menubar nav a {
+		font: size 20px;
+	}
+	.principal { /*Texto principal da Homepage*/
+		margin: 230px 0 0 0;
+		font-size: 15px;
+	}
+	.titulo-principal {
+		font-size: 20px;
+	}
+	.video { /*Vídeo ilustrativo */
+		width: auto;
+		margin: 2em auto;
+	}
+	.beneficios, .titulo-centralizado { /*Benefícios do estabelecimento*/
+		width: 98%;
+		margin: 0 0 0 0;
+		font-size: 15px;
+		padding: 0 0 0 0;
+	}
+	.titulo-centralizado {
+		font-size: 20px;
+		padding-bottom: 2px ;
+	}
+	.utensilhos {
+	 	width: 36%;	
+	}
+	.localizacao { /*Titulo e mapa integrado ao google*/
+		padding: 0 0 0 0;
+		margin: 10px;	
+	}
+	.localizacao p {
+		font-size: 15px;
+		margin: 2em 0 2em ;
+	}
+	.titulo-mapa {
+		font-size: 20px;
+	}	
+	footer { /* Rodapé */
+		margin-top: 40px;
+		padding: 0%;
+	}
+	footer img {
+		width: 25%;
+	}
+	}
